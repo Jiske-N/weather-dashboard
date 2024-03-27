@@ -1,0 +1,147 @@
+/* variables for colour scheme */
+:root {
+    --background-color-main: rgb(102, 100, 100);
+    --background-color-secondary: rgb(50, 50, 168);
+    --text-color-main: black;
+    --text-color-secondary: white;
+}
+
+/* set 1rem to 10px to easily find values for the rest of the page */
+html {
+    font-size: 62.5%;
+}
+
+/* remove space on edges of the page */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* other settings for the whole document */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+    color: var(--text-color-main);
+    background-color: var(--background-color-main);
+}
+
+/* base/universal h values */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--text-color-main);
+    font-weight: 700;
+}
+
+/* specific text values */
+h1 {
+    font-size: 4rem;
+    color: var(--text-color-secondary);
+    position: relative;
+    left: 10%;
+}
+
+h2 {
+    font-size: 3.5rem;
+    padding: 1.5rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2rem;
+    margin: 1rem 2.5rem 0 1.5rem;
+}
+
+h5 {
+    font-size: 2rem;
+    color: var(--text-color-secondary);
+}
+
+h6 {
+    font-size: 1.5rem;
+}
+
+/* always wrap images in div */
+img {
+    width: 100%;
+}
+
+/* header and contents */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom right, rgb(68, 90, 185), rgb(29, 28, 104));
+    height: 15vh;
+}
+
+/* so children appear side by side */
+main {
+    display: flex;
+}
+
+/* left section and it's components */
+.left {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.left form {
+    border-bottom: solid var(--text-color-main) .2rem;
+}
+
+.left div, form {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.left form > *, div > * {
+    margin: .5rem;
+    padding: .5rem 0;
+}
+
+.left form button {
+    margin: 1.5rem .5rem;
+    background-color: rgb(51, 51, 146);
+    color: var(--text-color-secondary);
+}
+
+/* right section and it's components */
+.right {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    margin-right: 10%;
+}
+
+.right p {
+    padding-top: 1rem;
+}
+
+#current {
+    padding: 1rem;
+    border: solid var(--text-color-main) .2rem;
+    margin: 1.5rem;
+}
+
+#forecast {
+display: flex;
+justify-content: space-between;
+padding: 1rem;
+margin: .5rem 0 1.5rem 0;
+}
+
+#forecast > * {
+    background-color: var(--background-color-secondary);
+    color: var(--text-color-secondary);
+    padding: 1rem;
+    width: 15%;
+}
