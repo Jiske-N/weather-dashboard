@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Weather Dashboard</h1>
+    </header>
+    <main>
+        <section class="left">
+            <h2>Search for a City:</h2>
+            <form action="submit">
+                <input type="text" placeholder="Enter a location">
+                <button type="submit">Search</button>
+            </form>
+            <ul id="pastSearches">
+                <!-- To be deleted just for setting up styling -->
+                <li>Atlanta</li>
+                <li>Denver</li>
+                <li>Seattle</li>
+            </ul>
+        </section>
+        <section class="right">
+            <article id="current">
+                <h3>Enter or Select a City</h3>
+                <p>Temp:</p>
+                <p>Wind:</p>
+                <p>Humidity:</p>
+            </article>
+            <article id="forecast">
+                <h4>5-Day Forecast:</h4>
+                <aside>
+                    <h5>Date</h5>
+                    <p>Temp:</p>
+                    <p>Wind:</p>
+                    <p>Humidity:</p>
+                </aside>
+                <aside>
+                    <h5>Date</h5>
+                    <p>Temp:</p>
+                    <p>Wind:</p>
+                    <p>Humidity:</p>
+                </aside>
+                <aside>
+                    <h5>Date</h5>
+                    <p>Temp:</p>
+                    <p>Wind:</p>
+                    <p>Humidity:</p>
+                </aside>
+                <aside>
+                    <h5>Date</h5>
+                    <p>Temp:</p>
+                    <p>Wind:</p>
+                    <p>Humidity:</p>
+                </aside>
+                <aside>
+                    <h5>Date</h5>
+                    <p>Temp:</p>
+                    <p>Wind:</p>
+                    <p>Humidity:</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
