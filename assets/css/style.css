@@ -12,13 +12,13 @@ html {
 }
 
 /* remove space on edges of the page */
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
 /* other settings for the whole document */
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.8rem;
     color: var(--text-color-main);
@@ -51,11 +51,11 @@ h2 {
 
 h3 {
     font-size: 3rem;
+    margin: 1rem 2.5rem 0 1.5rem;
 }
 
 h4 {
     font-size: 2rem;
-    margin: 1rem 2.5rem 0 1.5rem;
 }
 
 h5 {
@@ -65,11 +65,6 @@ h5 {
 
 h6 {
     font-size: 1.5rem;
-}
-
-/* always wrap images in div */
-img {
-    width: 100%;
 }
 
 /* header and contents */
@@ -94,16 +89,22 @@ main {
 }
 
 .left form {
-    border-bottom: solid var(--text-color-main) .2rem;
+    border-bottom: solid var(--text-color-main) .3rem;
 }
 
-.left div, form {
+.left form input {
+    padding-left: .5rem;
+}
+
+.left div,
+form {
     display: flex;
     flex-direction: column;
     padding: 1rem;
 }
 
-.left form > *, div > * {
+.left form>*,
+div>* {
     margin: .5rem;
     padding: .5rem 0;
 }
@@ -122,6 +123,11 @@ main {
     margin-right: 5%;
 }
 
+.right h3 {
+    display: flex;
+    align-items: center;
+}
+
 .right p {
     line-height: 3rem;
     padding-top: 1rem;
@@ -129,12 +135,12 @@ main {
 
 #current {
     padding: 1rem;
-    border: solid var(--text-color-main) .2rem;
+    border: solid var(--text-color-main) .3rem;
     margin: 1.5rem;
 }
 
 #current img {
-    width: 25%;
+    width: 15%;
 }
 
 #current #instructionsimg {
@@ -143,13 +149,13 @@ main {
 }
 
 #forecast {
-display: flex;
-justify-content: space-between;
-padding: 1.5rem;
-margin: .5rem 0 1.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    margin: .5rem 0 1.5rem 0;
 }
 
-#forecast > * {
+#forecast>* {
     background-color: var(--background-color-secondary);
     color: var(--text-color-secondary);
     padding: 1rem;
