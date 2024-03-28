@@ -149,7 +149,6 @@ document.querySelector('#form').addEventListener('submit', function (inputLocati
             };
         })
         .then(function (currentWeather) {
-            console.log(currentWeather);
             if (!currentWeather) {
                 console.log('No results found!');
             } else {
