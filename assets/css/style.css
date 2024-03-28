@@ -1,7 +1,7 @@
 /* variables for colour scheme */
 :root {
-    --background-color-main: rgb(102, 100, 100);
-    --background-color-secondary: rgb(50, 50, 168);
+    --background-color-main: lightgray;
+    --background-color-secondary: rgb(37, 37, 79);
     --text-color-main: black;
     --text-color-secondary: white;
 }
@@ -77,7 +77,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(to bottom right, rgb(68, 90, 185), rgb(29, 28, 104));
+    background-image: linear-gradient(to bottom right, rgb(117, 129, 183), rgb(14, 14, 63));
     height: 15vh;
 }
 
@@ -118,11 +118,12 @@ main {
 .right {
     display: flex;
     flex-direction: column;
-    width: 65%;
-    margin-right: 10%;
+    width: 70%;
+    margin-right: 5%;
 }
 
 .right p {
+    line-height: 3rem;
     padding-top: 1rem;
 }
 
@@ -132,10 +133,19 @@ main {
     margin: 1.5rem;
 }
 
+#current img {
+    width: 25%;
+}
+
+#current #instructionsimg {
+    margin-top: 3rem;
+    width: 100%;
+}
+
 #forecast {
 display: flex;
 justify-content: space-between;
-padding: 1rem;
+padding: 1.5rem;
 margin: .5rem 0 1.5rem 0;
 }
 

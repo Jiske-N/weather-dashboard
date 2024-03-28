@@ -21,22 +21,23 @@
             </form>
             <div id="pastsearches">
                 <!-- To be deleted just for setting up styling -->
-                <button type="button">Atlanta</button>
+                <!-- <button type="button">Atlanta</button>
                 <button type="button">Denver</button>
-                <button type="button">Seattle</button>
+                <button type="button">Seattle</button> -->
             </div>
         </section>
         <section class="right">
             <article id="current">
-                <h3>Enter or Select a City</h3>
-                <p></p>
-                <p>Temp:</p>
-                <p>Wind:</p>
-                <p>Humidity:</p>
+                <h3 id="currentlocation">Search for or select a saved city to see current conditions and forecast.</h3>
+                <img id="instructionsimg" src="./assets/images/placeholder-screenshot.png" alt="Example image to show page functionality.">
+                <!-- <p id="currenticon"></p>
+                <p>Temp: <span id="currenttemp"></span> °C</p>
+                <p>Wind: <span id="currentwind"></span> km/h</p>
+                <p>Humidity: <span id="currenthumidity"></span> %</p> -->
             </article>
-            <h4>5-Day Forecast:</h4>
+            <h4 id="forecasth4" style="display: none;">5-Day Forecast:</h4>
             <article id="forecast">
-                <aside>
+                <!-- <aside>
                     <h5>Date</h5>
                     <p></p>
                     <p>Temp:</p>
@@ -70,11 +71,12 @@
                     <p>Temp:</p>
                     <p>Wind:</p>
                     <p>Humidity:</p>
-                </aside>
+                </aside> -->
             </article>
         </section>
     </main>
 
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.10/dayjs.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 
