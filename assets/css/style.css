@@ -1,7 +1,7 @@
 /* variables for colour scheme */
 :root {
-    --background-color-main: rgb(102, 100, 100);
-    --background-color-secondary: rgb(50, 50, 168);
+    --background-color-main: lightgray;
+    --background-color-secondary: rgb(37, 37, 79);
     --text-color-main: black;
     --text-color-secondary: white;
 }
@@ -12,13 +12,13 @@ html {
 }
 
 /* remove space on edges of the page */
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
 /* other settings for the whole document */
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.8rem;
     color: var(--text-color-main);
@@ -51,11 +51,11 @@ h2 {
 
 h3 {
     font-size: 3rem;
+    margin: 1rem 2.5rem 0 1.5rem;
 }
 
 h4 {
     font-size: 2rem;
-    margin: 1rem 2.5rem 0 1.5rem;
 }
 
 h5 {
@@ -67,17 +67,12 @@ h6 {
     font-size: 1.5rem;
 }
 
-/* always wrap images in div */
-img {
-    width: 100%;
-}
-
 /* header and contents */
 header {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(to bottom right, rgb(68, 90, 185), rgb(29, 28, 104));
+    background-image: linear-gradient(to bottom right, rgb(117, 129, 183), rgb(14, 14, 63));
     height: 15vh;
 }
 
@@ -94,16 +89,22 @@ main {
 }
 
 .left form {
-    border-bottom: solid var(--text-color-main) .2rem;
+    border-bottom: solid var(--text-color-main) .3rem;
 }
 
-.left div, form {
+.left form input {
+    padding-left: .5rem;
+}
+
+.left div,
+form {
     display: flex;
     flex-direction: column;
     padding: 1rem;
 }
 
-.left form > *, div > * {
+.left form>*,
+div>* {
     margin: .5rem;
     padding: .5rem 0;
 }
@@ -118,28 +119,43 @@ main {
 .right {
     display: flex;
     flex-direction: column;
-    width: 65%;
-    margin-right: 10%;
+    width: 70%;
+    margin-right: 5%;
+}
+
+.right h3 {
+    display: flex;
+    align-items: center;
 }
 
 .right p {
+    line-height: 3rem;
     padding-top: 1rem;
 }
 
 #current {
     padding: 1rem;
-    border: solid var(--text-color-main) .2rem;
+    border: solid var(--text-color-main) .3rem;
     margin: 1.5rem;
 }
 
-#forecast {
-display: flex;
-justify-content: space-between;
-padding: 1rem;
-margin: .5rem 0 1.5rem 0;
+#current img {
+    width: 15%;
 }
 
-#forecast > * {
+#current #instructionsimg {
+    margin-top: 3rem;
+    width: 100%;
+}
+
+#forecast {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    margin: .5rem 0 1.5rem 0;
+}
+
+#forecast>* {
     background-color: var(--background-color-secondary);
     color: var(--text-color-secondary);
     padding: 1rem;
