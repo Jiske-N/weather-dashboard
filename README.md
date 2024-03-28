@@ -24,9 +24,9 @@ Goals included, having no error messages and using no bootstrap or jquery to ref
 ## Further Goals
 
 Other goals include:
--Writing a good README.
--Ensuring commenting is folowing best practices and in place for ease of future alteration.
--Have all elements of the page being semantic.
+- Writing a good README.
+- Ensuring commenting is folowing best practices and in place for ease of future alteration.
+- Have all elements of the page being semantic.
 
 ## Potential Issues/Improvements
 
